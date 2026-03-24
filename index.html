@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CV - Julio César Salguero Cordón</title>
+
   <style>
     * {
       box-sizing: border-box;
@@ -26,7 +27,7 @@
       background: #e9e9e9;
     }
 
-    /* COLUMNA IZQUIERDA */
+    /* IZQUIERDA */
     .left {
       background: #123f8a;
       color: #ffffff;
@@ -81,10 +82,9 @@
     .contact-item p {
       font-size: 20px;
       line-height: 1.3;
-      word-break: break-word;
     }
 
-    /* COLUMNA DERECHA */
+    /* DERECHA */
     .right {
       background: #ececec;
       padding: 70px 70px 70px 80px;
@@ -95,7 +95,6 @@
       line-height: 0.95;
       font-weight: 800;
       margin-bottom: 18px;
-      color: #123f8a;
     }
 
     .profession {
@@ -119,22 +118,12 @@
       font-size: 32px;
       font-weight: 800;
       margin-bottom: 22px;
-      color: #123f8a;
     }
 
+    /* TIMELINE SIN LÍNEA */
     .timeline {
       position: relative;
-      padding-left: 26px;
-    }
-
-    .timeline::before {
-      content: "";
-      position: absolute;
-      left: 6px;
-      top: 8px;
-      bottom: 8px;
-      width: 3px;
-      background: #123f8a;
+      padding-left: 20px;
     }
 
     .timeline-item {
@@ -142,63 +131,34 @@
       margin-bottom: 26px;
     }
 
+    /* SOLO VIÑETAS */
     .timeline-item::before {
-      content: "";
+      content: "•";
       position: absolute;
-      left: -26px;
-      top: 7px;
-      width: 12px;
-      height: 12px;
-      background: #123f8a;
-      border-radius: 50%;
+      left: -18px;
+      top: 0;
+      font-size: 24px;
+      color: #123f8a;
     }
 
     .timeline-item h3 {
       font-size: 25px;
-      line-height: 1.15;
       font-weight: 800;
-      color: #123f8a;
     }
 
     .timeline-item h4 {
       font-size: 24px;
-      line-height: 1.15;
       font-weight: 700;
-      color: #123f8a;
     }
 
     .timeline-item p {
       font-size: 19px;
-      line-height: 1.3;
       margin-top: 4px;
-      color: #123f8a;
     }
 
     .simple-list p {
       font-size: 22px;
-      line-height: 1.2;
       font-weight: 700;
-    }
-
-    .skills-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 10px 40px;
-      margin-top: 10px;
-    }
-
-    .skills-grid ul {
-      padding-left: 22px;
-    }
-
-    .skills-grid li {
-      font-size: 18px;
-      margin-bottom: 10px;
-      line-height: 1.3;
-    }
-
-    .software-list {
-      margin-bottom: 20px;
     }
 
     .software-item {
@@ -210,11 +170,6 @@
     @media (max-width: 900px) {
       .cv-container {
         grid-template-columns: 1fr;
-      }
-
-      .photo-box {
-        min-height: auto;
-        padding-top: 30px;
       }
 
       .right {
@@ -232,162 +187,136 @@
       .section-title {
         font-size: 28px;
       }
-
-      .timeline-item h3,
-      .timeline-item h4 {
-        font-size: 22px;
-      }
-
-      .timeline-item p,
-      .contact-item p,
-      .contact-item h4,
-      .profile-text,
-      .simple-list p,
-      .software-item {
-        font-size: 18px;
-      }
-
-      .contact-title {
-        font-size: 28px;
-      }
-
-      .skills-grid {
-        grid-template-columns: 1fr;
-      }
     }
   </style>
 </head>
+
 <body>
-  <div class="cv-container">
-    <!-- IZQUIERDA -->
-    <aside class="left">
-      <div class="photo-box">
-        <img src="foto.jpg" alt="Foto de Julio César Salguero Cordón">
+
+<div class="cv-container">
+
+  <!-- IZQUIERDA -->
+  <aside class="left">
+
+    <div class="photo-box">
+      <img src="foto 1.2 ges.png" alt="Foto">
+    </div>
+
+    <div class="left-content">
+
+      <div class="profile-text">
+        Diseñador gráfico con intereses en fotografía, diseño editorial,
+        animación y diseño web.
       </div>
 
-      <div class="left-content">
-        <div class="profile-text">
-          Diseñador gráfico con intereses en fotografía, diseño editorial,
-          animación y diseño web.
-          <br><br>
-          En busca de crecer de forma profesional y desarrollar nuevas
-          habilidades creativas.
-        </div>
+      <div class="contact-title">Contacto</div>
 
-        <div class="contact-title">Contacto</div>
+      <div class="contact-item">
+        <h4>DPI</h4>
+        <p>2222 2222 0101</p>
+      </div>
 
-        <div class="contact-item">
-          <h4>DPI</h4>
-          <p>2863 09289 0101</p>
-        </div>
+      <div class="contact-item">
+        <h4>Teléfono</h4>
+        <p>2222-2222</p>
+      </div>
 
-        <div class="contact-item">
-          <h4>Teléfono</h4>
-          <p>4212-5474</p>
-        </div>
+      <div class="contact-item">
+        <h4>Email</h4>
+        <p>jjjjjjsssss@gmail.com</p>
+      </div>
 
-        <div class="contact-item">
-          <h4>Email</h4>
-          <p>juliosalguerocor@gmail.com</p>
-        </div>
+      <div class="contact-item">
+        <h4>Fecha de nacimiento</h4>
+        <p>24 de Noviembre de 1995</p>
+      </div>
 
-        <div class="contact-item">
-          <h4>Fecha de nacimiento</h4>
-          <p>24 de Noviembre de 1995</p>
-        </div>
+      <div class="contact-item">
+        <p>Ciudad de Guatemala</p>
+      </div>
 
-        <div class="contact-item">
-          <p>Ciudad de Guatemala</p>
+    </div>
+  </aside>
+
+  <!-- DERECHA -->
+  <main class="right">
+
+    <h1 class="name">Julio César<br>Salguero Cordón</h1>
+    <div class="profession">Diseñador Gráfico</div>
+    <div class="divider"></div>
+
+    <!-- FORMACION -->
+    <section class="section">
+      <h2 class="section-title">Formación Académica</h2>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>Licenciatura en Diseño Gráfico</h3>
+          <p>Universidad de San Carlos de Guatemala</p>
         </div>
       </div>
-    </aside>
+    </section>
 
-    <!-- DERECHA -->
-    <main class="right">
-      <h1 class="name">Julio César<br>Salguero Cordón</h1>
-      <div class="profession">Diseñador Gráfico</div>
-      <div class="divider"></div>
+    <!-- IDIOMAS -->
+    <section class="section">
+      <h2 class="section-title">Idiomas</h2>
+      <div class="simple-list">
+        <p>Español</p>
+        <p>Inglés</p>
+      </div>
+    </section>
 
-      <section class="section">
-        <h2 class="section-title">Formación Académica</h2>
-        <div class="timeline">
-          <div class="timeline-item">
-            <h3>Bachillerato en Ciencias y Letras</h3>
-            <p>Colegio Gilgal 2012 - 2013</p>
-          </div>
+    <!-- HABILIDADES -->
+    <section class="section">
+      <h2 class="section-title">Habilidades Técnicas</h2>
 
-          <div class="timeline-item">
-            <h3>Licenciatura en Diseño Gráfico</h3>
-            <p>Universidad de San Carlos de Guatemala</p>
-            <p>9no semestre</p>
-          </div>
-        </div>
-      </section>
+      <div class="software-item">Adobe Illustrator</div>
+      <div class="software-item">Adobe Photoshop</div>
+      <div class="software-item">Adobe After Effects</div>
+    </section>
 
-      <section class="section">
-        <h2 class="section-title">Idiomas</h2>
-        <div class="simple-list">
-          <p>Español</p>
-          <p>Inglés</p>
-        </div>
-      </section>
+    <!-- EXPERIENCIA -->
+    <section class="section">
+      <h2 class="section-title">Experiencia Laboral</h2>
 
-      <section class="section">
-        <h2 class="section-title">Habilidades Técnicas</h2>
+      <div class="timeline">
 
-        <div class="software-list">
-          <div class="software-item">Adobe Illustrator</div>
-          <div class="software-item">Adobe Photoshop</div>
-          <div class="software-item">Adobe After Effects</div>
+        <div class="timeline-item">
+          <h3>Banco Gyt Continental, S.A.</h3>
+          <h4>Banquero Personal</h4>
+          <p>Mayo 2014 - Marzo 2018</p>
         </div>
 
-        <div class="skills-grid">
-          <ul>
-            <li>Adobe Premiere Pro Básico</li>
-            <li>WordPress Básico</li>
-          </ul>
-          <ul>
-            <li>Diseño editorial</li>
-            <li>Diseño web</li>
-          </ul>
+        <div class="timeline-item">
+          <h3>COPEREX Parque de la Industria</h3>
+          <h4>Coordinador de eventos</h4>
+          <p>Marzo 2018 - Diciembre 2018</p>
         </div>
-      </section>
 
-      <section class="section">
-        <h2 class="section-title">Experiencia Laboral</h2>
-        <div class="timeline">
-          <div class="timeline-item">
-            <h3>Banco Gyt Continental, S.A.</h3>
-            <h4>Banquero Personal</h4>
-            <p>Mayo 2014 - Marzo 2018</p>
-          </div>
-
-          <div class="timeline-item">
-            <h3>COPEREX Parque de la Industria</h3>
-            <h4>Coordinador de eventos</h4>
-            <p>Marzo 2018 - Diciembre 2018</p>
-          </div>
-
-          <div class="timeline-item">
-            <h3>SIS Electrónica</h3>
-            <h4>Diseñador Gráfico</h4>
-            <p>Abril 2019 - Junio 2019</p>
-          </div>
-
-          <div class="timeline-item">
-            <h3>Trescom - Experiencia Portátil</h3>
-            <h4>Diseñador Gráfico</h4>
-            <p>Octubre 2021 - Octubre 2022</p>
-          </div>
-
-          <div class="timeline-item">
-            <h3>Agarrate Catalina</h3>
-            <h4>Diseñador Gráfico</h4>
-            <p>Abril 2023 - Actualidad</p>
-          </div>
+        <div class="timeline-item">
+          <h3>SIS Electrónica</h3>
+          <h4>Diseñador Gráfico</h4>
+          <p>Abril 2019 - Junio 2019</p>
         </div>
-      </section>
-    </main>
-  </div>
+
+        <div class="timeline-item">
+          <h3>Trescom </h3>
+          <h4>Diseñador Gráfico</h4>
+          <p>Octubre 2021 - Octubre 2022</p>
+        </div>
+
+        <div class="timeline-item">
+          <h3>Agarrate Catalina</h3>
+          <h4>Diseñador Gráfico</h4>
+          <p>Abril 2023 - Actualidad</p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+</div>
+
 </body>
 </html>
